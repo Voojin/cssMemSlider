@@ -22,12 +22,12 @@ img {
 
 body {
     margin: 0;
-    background-color: rgb(26, 113, 134);
+    background-color: rgb(5, 40, 49);
     height: 50vh;
 }
 
 .slider {
-    margin-top: 10%;
+    margin-top: 20%;
     width: 700px;
     height: 500px;
     overflow: hidden;
@@ -46,7 +46,7 @@ body {
 
 .middle {
     width: 700px;
-    margin: 1% auto;
+    margin: 20% auto;
 }
 @media (max-width: 450px) {
     .middle {
