@@ -46,7 +46,7 @@ body {
 
 .middle {
     width: 700px;
-    margin: 20% auto;
+    margin: 20% 0 auto;
 }
 @media (max-width: 450px) {
     .middle {
