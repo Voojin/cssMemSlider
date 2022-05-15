@@ -1,0 +1,273 @@
+*, *::before, *::after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+  }
+  
+  html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+  
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    margin: 0;
+    background-color: rgb(5, 40, 49);
+    height: 50vh;
+  
+  }
+  
+  .slider {
+    margin-top: 12%;
+    width: 45rem;
+    height: 32rem;
+    overflow: hidden;
+  
+    display: flex;
+  
+  }
+  
+  
+  @media (max-width: 768px) {
+    .slider {
+      width: 21.875rem;
+      height: 15.625rem;
+    }
+  
+  }
+  
+  .middle {
+    width: 45rem;
+    margin: 10% 0 auto;
+  }
+  
+  @media (max-width: 768px) {
+    .middle {
+      width: 22rem;
+  
+    }
+  
+  }
+  
+  
+  .navigation {
+  
+    height: 1.2rem;
+    display: flex;
+  
+  
+  
+  }
+  .barr {
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: rgb(11, 5, 85);
+    border-radius: 100%;
+    align-self: center;
+    display: flex;
+    margin-left: 0.25rem;
+    cursor: pointer;
+    
+    
+  
+  }
+  
+  .bar {
+    display: flex;
+    width: 1.4rem;
+    height: 1.4rem;
+    margin: 0.3rem;
+    background-color: transparent;
+    transition: all .4s ease;
+    opacity: 0.5;
+    border-radius: 100%;
+    
+    cursor: pointer;
+    
+    
+    
+  }
+  
+  .barr:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    background-color: chartreuse;
+    transition: .5s all ease-in;
+    border-radius: 100%;
+  }
+  
+  .barr:active {
+    background-color: rgb(255, 255, 255);
+    
+  
+    
+    
+  }
+  
+  
+  
+  input[name="r"] {
+    display: none;
+    
+  
+  }
+  
+  .slides {
+    width: 400%;
+    height: 100%;
+    display: flex;
+  
+  }
+  
+  @media (max-width: 768px) {
+    .slides {
+      width: 400%;
+      height: 100%;
+    }
+  
+  }
+  
+  .slide {
+    width: 25%;
+    transition: all .6s ease;
+  
+  }
+  
+  
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  #r1:checked~.slider .test .slide:first-of-type {
+    margin-left: 0;
+  }
+  
+  #r1:checked~.textcont .navigation .bar .barr0 {
+    background-color: red;
+  }
+  
+  #r2:checked~.slider .test .slide:first-of-type {
+    margin-left: -25%;
+  }
+  
+  #r2:checked~.textcont .navigation .bar .barr1{
+    background-color: red;
+  }
+  
+  #r3:checked~.slider .test .slide:first-of-type {
+    margin-left: -50%;
+  }
+  
+  #r3:checked~.textcont .navigation .bar .barr2 {
+    background-color: red;
+  }
+  
+  #r4:checked~.slider .test .slide:first-of-type {
+    margin-left: -75%;
+  }
+  
+  #r4:checked~.textcont .navigation .bar .barr3 {
+    background-color: red;
+  }
+  
+  .cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: start;
+    width: 45rem;
+    margin: 0 auto;
+    gap: 0;
+    padding-bottom: 10%;
+  
+  }
+  
+  @media (max-width: 768px) {
+    .cont {
+      width: 22.5rem;
+      align-items: center;
+  
+    }
+  
+  }
+  
+  .text {
+    height: 1.5rem;
+  }
+  
+  .textcont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
+  
+    overflow: hidden;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: cyan;
+  }
+  
+  @media (max-width: 768px) {
+    .textcont {
+      flex-direction: column-reverse;
+      height: 4rem;
+      width: 100%;
+  
+    }
+  
+    .text {
+      margin-top: 1rem;
+      overflow: hidden;
+      justify-items: start;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .navigation {
+      align-self: center;
+      
+    }
+  
+  }
+  
+  .text1,
+  .text2,
+  .text3,
+  .text4 {
+    transition: .5s all ease-in;
+  
+  }
+  
+  
+  
+  #r1:checked~.textcont .text .text1 {
+    margin-top: 0;
+  }
+  
+  #r2:checked~.textcont .text .text1 {
+    margin-top: -1.8rem;
+  }
+  
+  #r3:checked~.textcont .text .text1 {
+    margin-top: -3.5rem;
+  }
+  
+  #r4:checked~.textcont .text .text1 {
+    margin-top: -5.2rem;
+  }
+  
+  
